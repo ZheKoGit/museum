@@ -28,27 +28,279 @@
 	</header>
 	<main class="main">
 		<section class="welcome">
-			<div class="container"></div>
+			<div class="container welcome-wrapper">
+				<div class="welcome__content">
+					<h1 class="title_theme_on-dark title__border_false welcome__title"><span
+							class="welcome__span">Welcome</span>
+						to the Louvre</h1>
+					<p class="welcome__text">From the castle to the museum</p>
+					<button class="button welcome__button">Discover the Louvre</button>
+				</div>
+				<div class="welcome__image">
+					<div class="slider">
+						<div class="slider__images">
+							<img src="src/img/welcome-slider/1.jpg" alt="" class="image_1">
+						</div>
+						<div class="slider__buttons">
+							<span class="slider__number">01 | 05</span>
+							<span class="slider__map">
+								<button class="slider__btn"></button>
+								<button class="slider__btn"></button>
+								<button class="slider__btn"></button>
+								<button class="slider__btn"></button>
+								<button class="slider__btn"></button>
+							</span>
+							<span class="slider__navigation">
+								<button class="slider__navigation_left"></button>
+								<button class="slider__navigation_right"></button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="visiting">
-			<div class="container"></div>
+			<div class="container visiting-wrapper">
+				<h2 class="title_theme_on-light title__border_true">Virtual tour</h2>
+				<div class="layout-3-column">
+					<article class="virtual-tour__inner">
+						<h3 class="virtual-tour__title">Royal Palace</h3>
+						<img src="src/img/virtual-tour/1.jpg" alt="" class="virtual-tour__image">
+						<p class="virtual-tour__overview">360° Virtual Tour</p>
+						<p class="virtual-tour__street">Google Street Panorama View</p>
+					</article>
+					<article class="virtual-tour__inner">
+						<h3 class="virtual-tour__title">Denon Wing</h3>
+						<img src="src/img/virtual-tour/2.jpg" alt="" class="virtual-tour__image">
+						<p class="virtual-tour__overview">360° Virtual Tour</p>
+						<p class="virtual-tour__street">Google Street Panorama View</p>
+					</article>
+					<article class="virtual-tour__inner">
+						<h3 class="virtual-tour__title">Colonnade Perrault</h3>
+						<img src="src/img/virtual-tour/3.jpg" alt="" class="virtual-tour__image">
+						<p class="virtual-tour__overview">360° Virtual Tour</p>
+						<p class="virtual-tour__street">Google Street Panorama View</p>
+					</article>
+					<article class="virtual-tour__inner">
+						<h3 class="virtual-tour__title">Greek hall</h3>
+						<img src="src/img/virtual-tour/4.jpg" alt="" class="virtual-tour__image">
+						<p class="virtual-tour__overview">360° Virtual Tour</p>
+						<p class="virtual-tour__street">Google Street Panorama View</p>
+					</article>
+					<article class="virtual-tour__inner">
+						<h3 class="virtual-tour__title">Mona Lisa</h3>
+						<img src="src/img/virtual-tour/5.jpg" alt="" class="virtual-tour__image">
+						<p class="virtual-tour__overview">360° Virtual Tour</p>
+						<p class="virtual-tour__street">Google Street Panorama View</p>
+					</article>
+					<article class="virtual-tour__inner">
+						<h3 class="virtual-tour__title">Night Palace</h3>
+						<img src="src/img/virtual-tour/6.jpg" alt="" class="virtual-tour__image">
+						<p class="virtual-tour__overview">360° Virtual Tour</p>
+						<p class="virtual-tour__street">Google Street Panorama View</p>
+					</article>
+				</div>
+			</div>
 		</section>
 		<section class="explore">
-			<div class="container"></div>
+			<div class="container explore-wrapper">
+				<div class="explore__content">
+					<h2 class="title_theme_on-dark title__border_true">Picture explore</h2>
+					<p class="text explore__text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
+						the Spanish Golden Age.</p>
+					<p class="text explore__text">It was cleaned in 1984 to remove a <span">"yellow veil"</span> of dust that
+							had gathered since the previous restoration in the 19th century.</p>
+					<p class="text explore__text">The cleaning provoked furious protests, not because the picture had been
+						damaged in any way, but because it looked different.</p>
+				</div>
+				<div class="slider-comparison explore__slider">
+					<img src="src/img/explore-slider/before.jpg" alt="" class="slider-comparison__image_before">
+					<div class="slider-comparison__control"></div>
+				</div>
+			</div>
 		</section>
 		<section class="video">
-			<div class="container"></div>
+			<div class="container video-wrapper">
+				<div class="video__content">
+					<h2 class="title_theme_on-light title__border_false">Video journey</h2>
+					<p class="text video__text">Enter and visit one of the most famous museums in the world and enjoy
+						masterpieces such
+						as Mona Lisa or Hammurabi's Code</p>
+				</div>
+				<div class="video__player">
+					<video src="src/video/video0.mp4" poster="src/video/poster0.jpg" controls class="player"></video>
+					<button class="player__play_size_big"></button>
+				</div>
+				<div class="wrapper__video_position">
+					<button class="player__video_position"></button>
+				</div>
+				<div class="player__control">
+					<button class="player__play"></button>
+					<button class="player__video_position"></button>
+					<button class="player__volume"></button>
+					<button class="player__volume_position"></button>
+					<button class="player__screen_full"></button>
+				</div>
+				<div class="video__slider">
+					<div class="layout-3-column">
+						<video src="src/video/video3.mp4" poster="src/video/poster3.jpg" controls
+							class="player_size_small"></video>
+						<video src="src/video/video1.mp4" poster="src/video/poster1.jpg" controls
+							class="player_size_small"></video>
+						<video src="src/video/video2.mp4" poster="src/video/poster2.jpg" controls
+							class="player_size_small"></video>
+					</div>
+					<div class="video__slider-control">
+						<button class="slider_left"></button>
+						<button class="slider_position"></button>
+						<button class="slider_position"></button>
+						<button class="slider_position"></button>
+						<button class="slider_position"></button>
+						<button class="slider_position"></button>
+						<button class="slider_right"></button>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="gallery">
-			<div class="container"></div>
+			<div class="container">
+				<h1 class="title_theme_on-dark title__border_false">Art Gallery</h1>
+				<div class="layout-3-column gallery-inner">
+					<img src="src/img/gallery/galery1.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery2.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery3.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery4.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery5.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery6.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery7.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery8.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery9.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery10.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery11.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery12.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery13.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery14.jpg" alt="" class="gallery__image">
+					<img src="src/img/gallery/galery15.jpg" alt="" class="gallery__image">
+				</div>
+			</div>
 		</section>
 		<section class="tickets">
-			<div class="container"></div>
+			<div class="container">
+				<h2 class="title_theme_on-light title__border_true">BUY TICKETS</h2>
+				<div class="tickets__image"></div>
+				<form action="" method="post" class="tickets__form">
+					<div class="form__ticket-type">
+						<h4 class="form__title">Ticket Type</h4>
+						<input type="radio" value="permanent" checked name="exhibition" id="form__ticket_type_permanent"
+							class="form__radio">
+						<label for="form__ticket_type_permanent">Permanent exhibition</label>
+						<input type="radio" value="temporary" name="exhibition" id="form__ticket_type_temporary"
+							class="form__radio">
+						<label for="form__ticket_type_temporary">Temporary exhibition</label>
+						<input type="radio" value="combined" name="exhibition" id="form__ticket_type_combined"
+							class="form__radio">
+						<label for="form__ticket_type_combined">Combined Admission</label>
+					</div>
+					<div class="form__ticket-amount">
+						<h4 class="form__title">Amount</h4>
+						<div class="amount__inner">
+							<p class="amount__title">Basic 18+</p>
+							<div class="amount__btn-inner">
+								<button type="button" onclick="this.nextElementSibling.stepDown()"
+									class="amount__down">-</button>
+								<input type="number" min="1" max="10" step="1" value="1" readonly class="amount__number">
+								<button type="button" onclick="this.previousElementSibling.stepUp()"
+									class="amount__up">+</button>
+							</div>
+						</div>
+						<div class="amount__inner">
+							<p class="amount__title">Senior 65+</p>
+							<div class="amount__btn-inner">
+								<button type="button" onclick="this.nextElementSibling.stepDown()"
+									class="amount__down">-</button>
+								<input type="number" min="1" max="10" step="1" value="1" readonly class="amount__number">
+								<button type="button" onclick="this.previousElementSibling.stepUp()"
+									class="amount__up">+</button>
+							</div>
+						</div>
+						<p class="tickets__total-sum">Total € 220</p>
+						<button type="button" class="tickets__button">Buy Now</button>
+					</div>
+				</form>
+			</div>
+			<div class="parallax"></div>
 		</section>
 		<section class="contacts">
-			<div class="container"></div>
+			<div class="container">
+				<h2 class="title_theme_on-light title__border_true">Contacts</h2>
+				<p class="contacts__content">
+				<h4 class="contacts__title-content">Palais Royal Musee du Louvre</h4>
+				<p class="contacts__address">address: 75001 Paris, France</p>
+				<p><a href="tel:+33(0) 1 40 20 50 50" class="contacts__phone">phone: +33(0) 1 40 20 50 50</a></p>
+				<p><a href="mailto:info@louvre.fr" class="contacts__mail">mail: info@louvre.fr</a></p>
+			</div>
+			<div class="contacts__map"></div>
+			</div>
 		</section>
 	</main>
+	<footer class="footer">
+		<div class="container">
+			<a href="" class="logo">Louvre</a>
+			<div class="layout-2-column">
+				<div class="layout-2-column">
+					<ul class="navigation">
+						<li class="navigation__item"><a href="" class="navigation__link">Visiting</a></li>
+						<li class="navigation__item"><a href="" class="navigation__link">Explore</a></li>
+						<li class="navigation__item"><a href="" class="navigation__link">Video</a></li>
+						<li class="navigation__item"><a href="" class="navigation__link">Gallery</a></li>
+						<li class="navigation__item"><a href="" class="navigation__link">Tickets</a></li>
+						<li class="navigation__item"><a href="" class="navigation__link">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="social">
+					<a href="" class="social__link">
+						<object data="src/img/icons/social/youtube.svg" type="image/svg+xml">
+							You browser does not support SVG
+							<img src="src/img/icons/social/youtube.png">
+						</object>
+					</a>
+					<a href="" class="social__link">
+						<object data="src/img/icons/social/instagram.svg" type="image/svg+xml">
+							You browser does not support SVG
+							<img src="src/img/icons/social/instagram.png">
+						</object>
+					</a>
+					<a href="" class="social__link">
+						<object data="src/img/icons/social/facebook.svg" type="image/svg+xml">
+							You browser does not support SVG
+							<img src="src/img/icons/social/facebook.png">
+						</object>
+					</a>
+					<a href="" class="social__link">
+						<object data="src/img/icons/social/twitter.svg" type="image/svg+xml">
+							You browser does not support SVG
+							<img src="src/img/icons/social/twitter.png">
+						</object>
+					</a>
+					<a href="" class="social__link">
+						<object data="src/img/icons/social/pinterest.svg" type="image/svg+xml">
+							You browser does not support SVG
+							<img src="src/img/icons/social/pinterest.png">
+						</object>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="container">
+			<div class="footer__wrapper_under-line">
+				<p class="text__under-line">© 2021</p>
+				<p class="text__under-line">The Rolling Scopes School</p>
+				<p class="text__under-line">Username</p>
+			</div>
+		</div>
+	</footer>
+	<script src="src/index.js"></script>
 </body>
 
 </html>
