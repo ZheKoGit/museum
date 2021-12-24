@@ -1,0 +1,16 @@
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 55px;
+	flex-wrap: wrap;
+}
+
+.navigation__link {
+	letter-spacing: 2px;
+	color: $color-light;
+	@extend %transition;
+	&:hover {
+		color: $color-title;
+	}
+}

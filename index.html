@@ -7,13 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="src/sass/style.css">
 	<link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300;500;700&display=swap"
+		rel="stylesheet">
 	<title>Louvre Museum</title>
 </head>
 
 <body>
 	<header class="header">
-		<div class="container">
-			<a href="" class="logo">Louvre</a>
+		<div class="container header-wrapper">
+			<a href="" class="logo"><span class="logo__image"></span>Louvre</a>
 			<nav class="header__navigation">
 				<ul class="navigation">
 					<li class="navigation__item"><a href="" class="navigation__link">Visiting</a></li>
@@ -30,29 +32,31 @@
 		<section class="welcome">
 			<div class="container welcome-wrapper">
 				<div class="welcome__content">
-					<h1 class="title_theme_on-dark title__border_false welcome__title"><span
+					<h1 class="title title_theme_on-dark title__border_false welcome__title"><span
 							class="welcome__span">Welcome</span>
 						to the Louvre</h1>
 					<p class="welcome__text">From the castle to the museum</p>
-					<button class="button welcome__button">Discover the Louvre</button>
+					<button class="button button_type_basic welcome__button">Discover the Louvre</button>
 				</div>
 				<div class="welcome__image">
 					<div class="slider">
 						<div class="slider__images">
-							<img src="src/img/welcome-slider/1.jpg" alt="" class="image_1">
+							<img src="src/img/welcome-slider/1.jpg" alt="" class="slider__image slider__image_1">
 						</div>
-						<div class="slider__buttons">
-							<span class="slider__number">01 | 05</span>
+						<div class="layout-3-column slider__buttons">
+							<span class="number__slider_wrap">
+								<span class="number__slider_active">01</span>|<span class="number__sliders_total">05</span>
+							</span>
 							<span class="slider__map">
-								<button class="slider__btn"></button>
+								<button class="slider__btn slider__btn_active"></button>
 								<button class="slider__btn"></button>
 								<button class="slider__btn"></button>
 								<button class="slider__btn"></button>
 								<button class="slider__btn"></button>
 							</span>
 							<span class="slider__navigation">
-								<button class="slider__navigation_left"></button>
-								<button class="slider__navigation_right"></button>
+								<button class="slider__navigation_item slider__navigation_left"></button>
+								<button class="slider__navigation_item slider__navigation_right"></button>
 							</span>
 						</div>
 					</div>
@@ -61,7 +65,7 @@
 		</section>
 		<section class="visiting">
 			<div class="container visiting-wrapper">
-				<h2 class="title_theme_on-light title__border_true">Virtual tour</h2>
+				<h2 class="title title_theme_on-light title__border_true">Virtual tour</h2>
 				<div class="layout-3-column">
 					<article class="virtual-tour__inner">
 						<h3 class="virtual-tour__title">Royal Palace</h3>
@@ -105,7 +109,7 @@
 		<section class="explore">
 			<div class="container explore-wrapper">
 				<div class="explore__content">
-					<h2 class="title_theme_on-dark title__border_true">Picture explore</h2>
+					<h2 class="title title_theme_on-dark title__border_true">Picture explore</h2>
 					<p class="text explore__text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
 						the Spanish Golden Age.</p>
 					<p class="text explore__text">It was cleaned in 1984 to remove a <span">"yellow veil"</span> of dust that
@@ -122,7 +126,7 @@
 		<section class="video">
 			<div class="container video-wrapper">
 				<div class="video__content">
-					<h2 class="title_theme_on-light title__border_false">Video journey</h2>
+					<h2 class="title title_theme_on-light title__border_false">Video journey</h2>
 					<p class="text video__text">Enter and visit one of the most famous museums in the world and enjoy
 						masterpieces such
 						as Mona Lisa or Hammurabi's Code</p>
@@ -164,7 +168,7 @@
 		</section>
 		<section class="gallery">
 			<div class="container">
-				<h1 class="title_theme_on-dark title__border_false">Art Gallery</h1>
+				<h2 class="title title_theme_on-dark title__border_false">Art Gallery</h2>
 				<div class="layout-3-column gallery-inner">
 					<img src="src/img/gallery/galery1.jpg" alt="" class="gallery__image">
 					<img src="src/img/gallery/galery2.jpg" alt="" class="gallery__image">
@@ -186,7 +190,7 @@
 		</section>
 		<section class="tickets">
 			<div class="container">
-				<h2 class="title_theme_on-light title__border_true">BUY TICKETS</h2>
+				<h2 class="title title_theme_on-light title__border_true">BUY TICKETS</h2>
 				<div class="tickets__image"></div>
 				<form action="" method="post" class="tickets__form">
 					<div class="form__ticket-type">
@@ -224,7 +228,7 @@
 							</div>
 						</div>
 						<p class="tickets__total-sum">Total € 220</p>
-						<button type="button" class="tickets__button">Buy Now</button>
+						<button type="button" class="button button_type_dark tickets__button">Buy Now</button>
 					</div>
 				</form>
 			</div>
@@ -232,7 +236,7 @@
 		</section>
 		<section class="contacts">
 			<div class="container">
-				<h2 class="title_theme_on-light title__border_true">Contacts</h2>
+				<h2 class="title title_theme_on-light title__border_true">Contacts</h2>
 				<p class="contacts__content">
 				<h4 class="contacts__title-content">Palais Royal Musee du Louvre</h4>
 				<p class="contacts__address">address: 75001 Paris, France</p>

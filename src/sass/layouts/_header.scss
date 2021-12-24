@@ -1,0 +1,14 @@
+.header {
+	padding: 59px 0 65px;
+	background-color: $color-background-dark;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__navigation {
+	max-width: 940px;
+}

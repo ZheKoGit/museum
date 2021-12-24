@@ -1,0 +1,40 @@
+.welcome {
+	padding-bottom: 60px;
+	background-color: $color-background-dark;
+}
+
+.welcome-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.welcome__content {
+	position: absolute;
+	z-index: 1;
+	left: 20px;
+	width: 595px;
+}
+
+.welcome__title {
+	margin: 0 0 $margin-big;
+	white-space: nowrap;
+}
+
+.welcome__span {
+	display: block;
+}
+
+.welcome__text {
+	margin: 0 0 $margin-big;
+	@include font($size: 2.8rem, $height: 3.3rem);
+	letter-spacing: 2px;
+	color: $color-light;
+}
+
+.welcome__button {
+	width: 360px;
+	height: 75px;
+	border-radius: 10px;
+}

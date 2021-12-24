@@ -1,0 +1,16 @@
+.button {
+	border: none;
+	color: $color-light;
+	@extend %transition;
+	&:hover {
+		background-color: $color-title;
+	}
+}
+
+.button_type_basic {
+	background-color: $color-button;
+}
+
+.button_type_dark {
+	background-color: $color-button;
+}
