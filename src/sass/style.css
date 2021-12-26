@@ -2,11 +2,11 @@ body {
   font-family: "Roboto", Verdana, sans-serif;
 }
 
-.logo, .title {
+.virtual-tour__title, .logo, .title {
   font-family: "Forum", Verdana, sans-serif;
 }
 
-.slider__navigation_item, .button, .navigation__link {
+.virtual-tour__title::after, .slider__navigation_item, .slider__btn, .button, .navigation__link {
   transition: all 0.3s ease-out;
 }
 
@@ -27,6 +27,7 @@ body {
 }
 
 .title {
+  margin: 0 0 75px;
   font-style: normal;
   font-weight: 400;
   font-size: 8rem;
@@ -46,6 +47,10 @@ body {
 .title__border_true {
   padding-bottom: 25px;
   border-bottom: 3px solid #710707;
+}
+
+.text {
+  line-height: 3.8rem;
 }
 
 /* ==========================================================================
@@ -483,6 +488,9 @@ a {
   	width: 29%;
   }*/
 }
+.layout-3-column > * {
+  flex-basis: 29%;
+}
 
 .logo {
   display: flex;
@@ -562,12 +570,13 @@ a {
 }
 
 .slider__buttons {
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   position: absolute;
   bottom: -60px;
   width: 600px;
   height: 120px;
+  padding: 0 74px;
   font-style: normal;
   font-weight: 400;
   font-size: 2.2rem;
@@ -586,6 +595,10 @@ a {
 
 .number__sliders_total {
   margin-left: 10px;
+}
+
+.slider__map {
+  display: inline-flex;
 }
 
 .slider__btn {
@@ -607,6 +620,7 @@ a {
 
 .slider__navigation {
   display: inline-flex;
+  justify-content: center;
 }
 
 .slider__navigation_item {
@@ -630,6 +644,71 @@ a {
 }
 .slider__navigation_right:hover {
   background-image: url("../img/icons/right_hover.svg");
+}
+
+.slider-comparison {
+  position: relative;
+}
+
+.slider-comparison__control {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 39px;
+  height: 700px;
+  background-image: url("../img/icons/explore_slider.svg");
+  background-repeat: no-repeat;
+}
+
+.virtual-tour__inner {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  margin: 0 0 75px;
+}
+.virtual-tour__inner:hover .virtual-tour__title::after {
+  width: 0;
+}
+
+.virtual-tour__image {
+  order: -1;
+}
+
+.virtual-tour__title {
+  position: relative;
+  padding: 25px 0 10px;
+  margin: 0 0 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.virtual-tour__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 2px;
+  background-color: #710707;
+}
+
+.virtual-tour__overview {
+  margin: 0 0 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.virtual-tour__street {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
 }
 
 .header {
@@ -667,7 +746,6 @@ a {
 }
 
 .welcome__title {
-  margin: 0 0 75px;
   white-space: nowrap;
 }
 
@@ -689,6 +767,36 @@ a {
   width: 360px;
   height: 75px;
   border-radius: 10px;
+}
+
+.visiting {
+  padding: 75px 0 0;
+  background-color: #FFFFFF;
+}
+
+.explore {
+  padding: 75px 0;
+  background-color: #030303;
+}
+
+.explore-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore__text {
+  color: #FFFFFF;
+}
+.explore__text span {
+  color: #9D8665;
+}
+
+.explore__content {
+  flex-basis: 660px;
+}
+
+.explore__slider {
+  max-width: 720px;
 }
 
 /*# sourceMappingURL=style.css.map */

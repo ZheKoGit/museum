@@ -24,12 +24,13 @@
 }
 
 .slider__buttons {
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	position: absolute;
 	bottom: -60px;
 	width: 600px;
 	height: 120px;
+	padding: 0 74px;
 	@include font($size: 2.2rem, $height: 4rem, $weight: 400);
 	color: $color-light;
 	background-color: $color-background-dark;
@@ -47,12 +48,17 @@
 	margin-left: 10px;
 }
 
+.slider__map {
+	display: inline-flex;
+}
+
 .slider__btn {
 	width: 16px;
 	height: 16px;
 	margin-right: 25px;
 	background-color: $color-light;
 	border: none;
+	@extend %transition;
 	&:last-child {
 		margin-right: 0;
 	}
@@ -66,6 +72,7 @@
 
 .slider__navigation {
 	display: inline-flex;
+	justify-content: center;
 }
 
 .slider__navigation_item {
@@ -92,3 +99,16 @@
 	}
 }
 
+.slider-comparison {
+	position: relative;
+}
+
+.slider-comparison__control {
+	position: absolute;
+	top: 0;
+	left: 60%;
+	width: 39px;
+	height: 700px;
+	background-image: url('../img/icons/explore_slider.svg');
+	background-repeat: no-repeat;
+}

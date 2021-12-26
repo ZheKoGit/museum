@@ -13,6 +13,7 @@ body {
 }
 
 .title {
+	margin: 0 0 75px;
 	@include font($size: 8rem, $height: 9rem, $weight: 400);
 	@extend %font-add;
 	letter-spacing: 5px;
@@ -28,6 +29,10 @@ body {
 }
 
 .title__border_true {
-	padding-bottom: $margin;
+	padding-bottom: 25px;
 	border-bottom: 3px solid $color-button;
+}
+
+.text {
+	line-height: 3.8rem;
 }

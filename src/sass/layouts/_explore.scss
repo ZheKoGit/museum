@@ -1,0 +1,24 @@
+.explore {
+	padding: 75px 0;
+	background-color: $color-background-dark;
+}
+
+.explore-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.explore__text {
+	color: $color-light;
+	span {
+		color: $color-title;
+	}
+}
+
+.explore__content {
+	flex-basis: 660px;
+}
+
+.explore__slider {
+	max-width: 720px;
+}
