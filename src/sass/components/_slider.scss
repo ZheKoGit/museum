@@ -1,10 +1,10 @@
-.slider {
+.slider__image {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
 
-.slider__images {
+.slider__image-inner {
 	position: relative;
 	max-width: 1000px;
 	&:after {
@@ -18,12 +18,13 @@
 	}
 }
 
-.slider__image {
+.slider__image-item {
 	max-width: 100%;
+	height: auto;
 	vertical-align: middle;
 }
 
-.slider__buttons {
+.slider__control {
 	justify-content: space-between;
 	align-items: center;
 	position: absolute;
@@ -52,7 +53,7 @@
 	display: inline-flex;
 }
 
-.slider__btn {
+.image__slider-position {
 	width: 16px;
 	height: 16px;
 	margin-right: 25px;
@@ -70,21 +71,24 @@
 	}
 }
 
-.slider__navigation {
+.slider__buttons {
 	display: inline-flex;
 	justify-content: center;
 }
 
-.slider__navigation_item {
+.image__slider-direction {
 	width: 30px;
 	height: 8px;
+}
+
+.slider__button-item {
 	background-repeat: no-repeat;
 	background-color: transparent;
 	border: none;
 	@extend %transition;
 }
 
-.slider__navigation_left {
+.slider__button_left {
 	margin-right: 20px;
 	background-image: url('../img/icons/left.svg');
 	&:hover {
@@ -92,7 +96,7 @@
 	}
 }
 
-.slider__navigation_right {
+.slider__button_right {
 	background-image: url('../img/icons/right.svg');
 	&:hover {
 		background-image: url('../img/icons/right_hover.svg');
@@ -108,7 +112,52 @@
 	top: 0;
 	left: 60%;
 	width: 39px;
-	height: 700px;
+	height: 100%;
 	background-image: url('../img/icons/explore_slider.svg');
 	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.player_size_small {
+	max-width: 452px;
+}
+
+.video__slider-column {
+	margin-bottom: 40px;
+}
+
+.video__slider-control {
+	width: 100%;
+	column-gap: 20px;
+}
+
+.video__slider-direction {
+	width: 10px;
+	height: 12px;
+	&:hover {
+		filter: invert(14%) sepia(66%) saturate(2636%) hue-rotate(341deg) brightness(50%) contrast(115%);
+	}
+}
+
+.slider_left {
+	background-image: url('../img/icons/player/left_video.svg');
+}
+
+.slider_right {
+	background-image: url('../img/icons/player/right_video.svg');
+}
+
+.video__slider-position {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: none;
+	background-color: $color-slider-position;
+	@extend %transition;
+	&_active {
+		background-color: $color-slider-position-active;
+	}
+	&:hover {
+		background-color: $color-button;
+	}
 }

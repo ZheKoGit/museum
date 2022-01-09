@@ -1,6 +1,5 @@
 .welcome {
 	padding-bottom: 60px;
-	background-color: $color-background-dark;
 }
 
 .welcome-wrapper {
@@ -15,10 +14,6 @@
 	z-index: 1;
 	left: 20px;
 	width: 595px;
-}
-
-.welcome__title {
-	white-space: nowrap;
 }
 
 .welcome__span {

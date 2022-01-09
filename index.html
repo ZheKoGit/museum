@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="wrapper_theme_dark header">
 		<div class="container header-wrapper">
 			<a href="" class="logo"><span class="logo__image"></span>Louvre</a>
 			<nav class="header__navigation">
@@ -29,7 +29,7 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="welcome">
+		<section class="wrapper_theme_dark welcome">
 			<div class="container welcome-wrapper">
 				<div class="welcome__content">
 					<h1 class="title title_theme_on-dark title__border_false welcome__title"><span
@@ -39,76 +39,77 @@
 					<button class="button button_type_basic welcome__button">Discover the Louvre</button>
 				</div>
 				<div class="welcome__image">
-					<div class="slider">
-						<div class="slider__images">
-							<img src="src/img/welcome-slider/1.jpg" alt="" class="slider__image slider__image_1">
+					<div class="slider__image">
+						<div class="slider__image-inner">
+							<img src="src/img/welcome-slider/1.jpg" width="1000" height="750" alt=""
+								class="slider__image-item slider__image_1">
 						</div>
-						<div class="layout-3-column slider__buttons">
+						<div class="layout-3-column slider__control">
 							<span class="number__slider_wrap">
 								<span class="number__slider_active">01</span>|<span class="number__sliders_total">05</span>
 							</span>
 							<span class="slider__map">
-								<button class="slider__btn slider__btn_active"></button>
-								<button class="slider__btn"></button>
-								<button class="slider__btn"></button>
-								<button class="slider__btn"></button>
-								<button class="slider__btn"></button>
+								<button class="image__slider-position image__slider-position_active"></button>
+								<button class="image__slider-position"></button>
+								<button class="image__slider-position"></button>
+								<button class="image__slider-position"></button>
+								<button class="image__slider-position"></button>
 							</span>
-							<span class="slider__navigation">
-								<button class="slider__navigation_item slider__navigation_left"></button>
-								<button class="slider__navigation_item slider__navigation_right"></button>
+							<span class="slider__buttons">
+								<button class="slider__button-item image__slider-direction slider__button_left"></button>
+								<button class="slider__button-item image__slider-direction slider__button_right"></button>
 							</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="visiting">
+		<section class="section wrapper_theme_light visiting">
 			<div class="container visiting-wrapper">
 				<h2 class="title title_theme_on-light title__border_true">Virtual tour</h2>
 				<div class="layout-3-column">
 					<article class="virtual-tour__inner">
 						<h3 class="virtual-tour__title">Royal Palace</h3>
-						<img src="src/img/virtual-tour/1.jpg" alt="" class="virtual-tour__image">
+						<img src="src/img/virtual-tour/1.jpg" width="440" height="285" alt="" class="virtual-tour__image">
 						<p class="virtual-tour__overview">360° Virtual Tour</p>
 						<p class="virtual-tour__street">Google Street Panorama View</p>
 					</article>
 					<article class="virtual-tour__inner">
 						<h3 class="virtual-tour__title">Denon Wing</h3>
-						<img src="src/img/virtual-tour/2.jpg" alt="" class="virtual-tour__image">
+						<img src="src/img/virtual-tour/2.jpg" width="440" height="285" alt="" class="virtual-tour__image">
 						<p class="virtual-tour__overview">360° Virtual Tour</p>
 						<p class="virtual-tour__street">Google Street Panorama View</p>
 					</article>
 					<article class="virtual-tour__inner">
 						<h3 class="virtual-tour__title">Colonnade Perrault</h3>
-						<img src="src/img/virtual-tour/3.jpg" alt="" class="virtual-tour__image">
+						<img src="src/img/virtual-tour/3.jpg" width="440" height="285" alt="" class="virtual-tour__image">
 						<p class="virtual-tour__overview">360° Virtual Tour</p>
 						<p class="virtual-tour__street">Google Street Panorama View</p>
 					</article>
 					<article class="virtual-tour__inner">
 						<h3 class="virtual-tour__title">Greek hall</h3>
-						<img src="src/img/virtual-tour/4.jpg" alt="" class="virtual-tour__image">
+						<img src="src/img/virtual-tour/4.jpg" width="440" height="285" alt="" class="virtual-tour__image">
 						<p class="virtual-tour__overview">360° Virtual Tour</p>
 						<p class="virtual-tour__street">Google Street Panorama View</p>
 					</article>
 					<article class="virtual-tour__inner">
 						<h3 class="virtual-tour__title">Mona Lisa</h3>
-						<img src="src/img/virtual-tour/5.jpg" alt="" class="virtual-tour__image">
+						<img src="src/img/virtual-tour/5.jpg" width="440" height="285" alt="" class="virtual-tour__image">
 						<p class="virtual-tour__overview">360° Virtual Tour</p>
 						<p class="virtual-tour__street">Google Street Panorama View</p>
 					</article>
 					<article class="virtual-tour__inner">
 						<h3 class="virtual-tour__title">Night Palace</h3>
-						<img src="src/img/virtual-tour/6.jpg" alt="" class="virtual-tour__image">
+						<img src="src/img/virtual-tour/6.jpg" width="440" height="285" alt="" class="virtual-tour__image">
 						<p class="virtual-tour__overview">360° Virtual Tour</p>
 						<p class="virtual-tour__street">Google Street Panorama View</p>
 					</article>
 				</div>
 			</div>
 		</section>
-		<section class="explore">
-			<div class="container explore-wrapper">
-				<div class="explore__content">
+		<section class="section wrapper_theme_dark explore">
+			<figure class="container explore-wrapper">
+				<figcaption class="explore__content">
 					<h2 class="title title_theme_on-dark title__border_true">Picture explore</h2>
 					<p class="text explore__text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
 						the Spanish Golden Age.</p>
@@ -116,15 +117,15 @@
 						had gathered since the previous restoration in the 19th century.</p>
 					<p class="text explore__text">The cleaning provoked furious protests, not because the picture had been
 						damaged in any way, but because it looked different.</p>
-				</div>
+				</figcaption>
 				<div class="slider-comparison explore__slider">
-					<img src="src/img/explore-slider/before.jpg" alt=""
-						class="slider__image slider-comparison__image_before">
+					<img src="src/img/explore-slider/before.jpg" width="720" height="700" alt=""
+						class="slider__image-item slider-comparison__image_before">
 					<div class="slider-comparison__control"></div>
 				</div>
-			</div>
+			</figure>
 		</section>
-		<section class="video">
+		<section class="section wrapper_theme_light video">
 			<div class="container video-wrapper">
 				<div class="video__content">
 					<h2 class="title title_theme_on-light title__border_false">Video journey</h2>
@@ -132,22 +133,22 @@
 						masterpieces such
 						as Mona Lisa or Hammurabi's Code</p>
 				</div>
-				<div class="video__player">
-					<video src="src/video/video0.mp4" poster="src/video/poster0.jpg" controls class="player"></video>
-					<button class="player__play_size_big"></button>
-				</div>
-				<div class="wrapper__video_position">
-					<button class="player__video_position"></button>
-				</div>
-				<div class="player__control">
-					<button class="player__play"></button>
-					<button class="player__video_position"></button>
-					<button class="player__volume"></button>
-					<button class="player__volume_position"></button>
-					<button class="player__screen_full"></button>
+				<div class="player-wrapper">
+					<video src="src/video/video0.mp4" poster="src/video/poster0.jpg" class="player"></video>
+					<button type="button" class="player__play_size_big"></button>
+					<div class="player-wrapper__video_position">
+						<button type="button" class="player__video_position"></button>
+					</div>
+					<div class="player__control">
+						<button type="button" class="player-button player__play"></button>
+						<input type="range" min="0" max="100" step="1" value="45" class="player__control-range play-range">
+						<button type="button" class="player-button player__volume"></button>
+						<input type="range" min="0" max="100" step="1" value="45" class="player__control-range play-volume">
+						<button type="button" class="player-button player__screen_full"></button>
+					</div>
 				</div>
 				<div class="video__slider">
-					<div class="layout-3-column">
+					<div class="layout-3-column video__slider-column">
 						<video src="src/video/video3.mp4" poster="src/video/poster3.jpg" controls
 							class="player_size_small"></video>
 						<video src="src/video/video1.mp4" poster="src/video/poster1.jpg" controls
@@ -155,19 +156,19 @@
 						<video src="src/video/video2.mp4" poster="src/video/poster2.jpg" controls
 							class="player_size_small"></video>
 					</div>
-					<div class="video__slider-control">
-						<button class="slider_left"></button>
-						<button class="slider_position"></button>
-						<button class="slider_position"></button>
-						<button class="slider_position"></button>
-						<button class="slider_position"></button>
-						<button class="slider_position"></button>
-						<button class="slider_right"></button>
+					<div class="slider__buttons video__slider-control">
+						<button class="slider__button-item video__slider-direction slider_left"></button>
+						<button class="video__slider-position video__slider-position_active"></button>
+						<button class="video__slider-position"></button>
+						<button class="video__slider-position"></button>
+						<button class="video__slider-position"></button>
+						<button class="video__slider-position"></button>
+						<button class="slider__button-item video__slider-direction slider_right"></button>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="gallery">
+		<section class="wrapper_theme_dark gallery">
 			<div class="container">
 				<h2 class="title title_theme_on-dark title__border_false">Art Gallery</h2>
 				<div class="layout-3-column gallery-inner">
@@ -189,7 +190,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="tickets">
+		<section class="section wrapper_theme_light tickets">
 			<div class="container">
 				<h2 class="title title_theme_on-light title__border_true">BUY TICKETS</h2>
 				<div class="tickets__image"></div>
@@ -235,7 +236,7 @@
 			</div>
 			<div class="parallax"></div>
 		</section>
-		<section class="contacts">
+		<section class="section wrapper_theme_light contacts">
 			<div class="container">
 				<h2 class="title title_theme_on-light title__border_true">Contacts</h2>
 				<p class="contacts__content">
@@ -248,7 +249,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="wrapper_theme_dark footer">
 		<div class="container">
 			<a href="" class="logo">Louvre</a>
 			<div class="layout-2-column">
