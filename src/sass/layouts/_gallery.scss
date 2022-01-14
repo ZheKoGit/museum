@@ -1,0 +1,24 @@
+.gallery {
+	height: 2500px;
+	padding: 75px 0 0;
+	overflow: hidden;
+}
+
+.gallery-inner {
+	height: 3500px;
+}
+
+.gallery__image {
+	
+}
+
+.image__inner {
+	max-width: 464px;
+	&:nth-child(11n+1) {
+		margin-top: 50px;
+	}
+}
+
+.gallery__image {
+	width: 100%;
+}

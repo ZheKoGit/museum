@@ -7,10 +7,16 @@
 	}
 }
 
+.button-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .button_type_basic {
 	background-color: $color-button;
 }
 
 .button_type_dark {
-	background-color: $color-button;
+	background-color: $color-dark;
 }

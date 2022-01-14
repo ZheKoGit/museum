@@ -550,12 +550,18 @@ a {
   background-color: #9D8665;
 }
 
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button_type_basic {
   background-color: #710707;
 }
 
 .button_type_dark {
-  background-color: #710707;
+  background-color: #000000;
 }
 
 .slider__image {
@@ -722,13 +728,13 @@ a {
   background-color: #710707;
 }
 
-.virtual-tour__inner {
+.virtual-tour__link {
   display: flex;
   flex-direction: column;
   color: #000000;
   margin: 0 0 75px;
 }
-.virtual-tour__inner:hover .virtual-tour__title::after {
+.virtual-tour__link:hover .virtual-tour__title::after {
   width: 0;
 }
 
@@ -986,6 +992,36 @@ a {
   max-width: 720px;
   margin: 0;
   margin-left: 20px;
+}
+
+.gallery {
+  height: 2500px;
+  padding: 75px 0 0;
+  overflow: hidden;
+}
+
+.gallery-inner {
+  height: 3500px;
+}
+
+.image__inner {
+  max-width: 464px;
+}
+.image__inner:nth-child(11n+1) {
+  margin-top: 50px;
+}
+
+.gallery__image {
+  width: 100%;
+}
+
+.tour__body {
+  margin: 0;
+}
+
+.tour__iframe {
+  width: 100%;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
