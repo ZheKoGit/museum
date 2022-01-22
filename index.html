@@ -148,8 +148,12 @@
 						as Mona Lisa or Hammurabi's Code</p>
 				</div>
 				<div class="player-wrapper">
-					<video src="src/video/video0.mp4" poster="src/video/poster0.jpg" class="player"></video>
-					<button type="button" class="player__play_size_big"></button>
+					<div class="player-inner">
+						<a class="player-link">
+							<!--<img class="player-poster" src="./src/video/poster0.jpg" width="1440" alt="Poster Video">-->
+						</a>
+						<button type="button" class="player__play_size_big"></button>
+					</div>
 					<div class="player-wrapper__video_position">
 						<button type="button" class="player__video_position"></button>
 					</div>
@@ -163,12 +167,27 @@
 				</div>
 				<div class="video__slider">
 					<div class="layout-3-column video__slider-column">
-						<video src="src/video/video3.mp4" poster="src/video/poster3.jpg" controls
-							class="player_size_small"></video>
-						<video src="src/video/video1.mp4" poster="src/video/poster1.jpg" controls
-							class="player_size_small"></video>
-						<video src="src/video/video2.mp4" poster="src/video/poster2.jpg" controls
-							class="player_size_small"></video>
+						<div class="player_size_small">
+							<iframe class="player-iframe" width="452" height="254.25"
+								src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0 modestbranding=1"
+								title="YouTube video player" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="player_size_small">
+							<iframe width="452" height="254.25"
+								src="https://www.youtube.com/embed/Vi5D6FKhRmo?controls=0 modestbranding=1"
+								title="YouTube video player" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
+						<div class="player_size_small">
+							<iframe width="452" height="254.25"
+								src="https://www.youtube.com/embed/NOhDysLnTvY?controls=0 modestbranding=1"
+								title="YouTube video player" frameborder="0" loading="lazy"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="slider__buttons video__slider-control">
 						<button class="slider__button-item video__slider-direction slider_left"></button>
@@ -186,28 +205,52 @@
 			<div class="container">
 				<h2 class="title title_theme_on-dark title__border_false">Art Gallery</h2>
 				<div class="gallery-wrapper">
-					<div class="layout-3-column gallery-inner">
-						<div class="image__inner">
-							<img src="src/img/gallery/galery1.jpg" width="464" height="464" alt="" class="gallery__image">
-						</div>
-						<div class="image__inner">
-							<img src="src/img/gallery/galery2.jpg" width="464" height="580" alt="" class="gallery__image">
-						</div>
-						<div class="image__inner">
-							<img src="src/img/gallery/galery3.jpg" width="464" height="580" alt="" class="gallery__image">
-						</div>
-						<img src="src/img/gallery/galery4.jpg" width="464" height="464" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery5.jpg" width="464" height="580" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery6.jpg" width="464" height="580" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery7.jpg" width="464" height="580" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery8.jpg" width="464" height="580" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery9.jpg" width="464" height="580" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery10.jpg" width="464" height="464" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery11.jpg" width="464" height="464" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery12.jpg" width="464" height="348" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery13.jpg" width="464" height="348" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery14.jpg" width="464" height="580" alt="" class="gallery__image">
-						<img src="src/img/gallery/galery15.jpg" width="464" height="464" alt="" class="gallery__image">
+					<div class="gallery__inner">
+						<!--<div class="gallery__inner-image"><img src="src/img/gallery/galery1.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery2.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery3.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery4.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery5.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery6.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery7.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery8.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery9.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery10.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery11.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery12.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery13.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery14.jpg" width="464" alt=""
+								class="gallery__image"></div>
+						<div class="gallery__inner-image"><img src="src/img/gallery/galery15.jpg" width="464" alt=""
+								class="gallery__image"></div>-->
+						<img src="src/img/gallery/galery1.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery2.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery3.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery4.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery5.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery6.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery7.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery8.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery9.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery10.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery11.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery12.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery13.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery14.jpg" width="464" alt="" class="gallery__image">
+						<img src="src/img/gallery/galery15.jpg" width="464" alt="" class="gallery__image">
 					</div>
 				</div>
 			</div>
