@@ -6,7 +6,7 @@ body {
   font-family: "Forum", Verdana, sans-serif;
 }
 
-.player-button, .player__play_size_big::after, .player__play_size_big, .virtual-tour__title::after, .video__slider-position, .slider__button-item, .image__slider-position, .button, .navigation__link {
+.ticket-btn, .player-button, .player__play_size_big::after, .player__play_size_big, .virtual-tour__title::after, .video__slider-position, .slider__button-item, .image__slider-position, .button, .navigation__link {
   transition: all 0.3s ease-out;
 }
 
@@ -941,6 +941,27 @@ a {
   background-image: url("../img/icons/player/fullscreen.svg");
 }
 
+.ticket-item {
+  border: none;
+  vertical-align: middle;
+}
+
+.ticket-btn:hover {
+  background-color: #710707;
+}
+
+.ticket-number {
+  text-align: center;
+}
+
+.parallax {
+  width: 100%;
+  height: 712px;
+  background-image: url("../img/tickets/parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .header {
   padding: 59px 0 65px;
 }
@@ -991,6 +1012,15 @@ a {
   width: 360px;
   height: 75px;
   border-radius: 10px;
+}
+
+.tour__body {
+  margin: 0;
+}
+
+.tour__iframe {
+  width: 100%;
+  height: 100vh;
 }
 
 .explore-wrapper {
@@ -1080,13 +1110,134 @@ a {
   margin-top: 50px;
 }
 
-.tour__body {
-  margin: 0;
+.tickets {
+  margin: 75px 0 0;
 }
 
-.tour__iframe {
+.tickets__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.tickets__image-wrapper {
+  flex-basis: 720px;
+  margin-right: 60px;
+}
+
+.tickets-image {
   width: 100%;
-  height: 100vh;
+  vertical-align: middle;
+}
+
+.tickets__form {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 660px;
+}
+
+.form__title {
+  margin: 0 0 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+}
+
+.form__radio-label {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+
+.form__radio_style_black {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.form__radio_style_black::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.form__radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form__radio:checked + .form__radio_style_black::after {
+  opacity: 1;
+}
+
+.form__ticket-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.amount__inner {
+  margin: 0 0 10px;
+}
+.amount__inner:last-of-type {
+  margin: 0 0 50px;
+}
+
+.amount__title {
+  margin: 0 0 15px;
+}
+
+.amount__btn-inner {
+  font-size: 0;
+  outline: 3px solid #000000;
+}
+
+.amount-item {
+  width: 50px;
+}
+
+.amount-btn {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  background-color: #FFFFFF;
+}
+
+.amount-number {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.tickets__total {
+  margin: 0 0 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+}
+
+.tickets__button {
+  width: 175px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,12 +15,15 @@
 @import './components/slider';
 @import './components/article';
 @import './components/player';
+@import './components/form';
+@import './components/parallax';
 
 // layouts
 @import './layouts/header';
 @import './layouts/welcome';
 @import './layouts/visiting';
+@import './layouts/tour';
 @import './layouts/explore';
 @import './layouts/video';
 @import './layouts/gallery';
-@import './layouts/tour';
+@import './layouts/tickets';

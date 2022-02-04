@@ -1,0 +1,15 @@
+.ticket-item {
+	border: none;
+	vertical-align: middle;
+}
+
+.ticket-btn {
+	@extend %transition;
+	&:hover {
+		background-color: $color-button;
+	}
+}
+
+.ticket-number {
+	text-align: center;
+}

@@ -209,49 +209,61 @@
 				</div>
 			</div>
 		</section>
-		<section class="section wrapper_theme_light tickets">
+		<section class="wrapper_theme_light tickets">
 			<div class="container">
 				<h2 class="title title_theme_on-light title__border_true">BUY TICKETS</h2>
-				<div class="tickets__image"></div>
-				<form action="" method="post" class="tickets__form">
-					<div class="form__ticket-type">
-						<h4 class="form__title">Ticket Type</h4>
-						<input type="radio" value="permanent" checked name="exhibition" id="form__ticket_type_permanent"
-							class="form__radio">
-						<label for="form__ticket_type_permanent">Permanent exhibition</label>
-						<input type="radio" value="temporary" name="exhibition" id="form__ticket_type_temporary"
-							class="form__radio">
-						<label for="form__ticket_type_temporary">Temporary exhibition</label>
-						<input type="radio" value="combined" name="exhibition" id="form__ticket_type_combined"
-							class="form__radio">
-						<label for="form__ticket_type_combined">Combined Admission</label>
+				<div class="tickets__inner">
+					<div class="tickets__image-wrapper">
+						<img src="./src/img/tickets/1.jpg" alt="" class="tickets-image">
 					</div>
-					<div class="form__ticket-amount">
-						<h4 class="form__title">Amount</h4>
-						<div class="amount__inner">
-							<p class="amount__title">Basic 18+</p>
-							<div class="amount__btn-inner">
-								<button type="button" onclick="this.nextElementSibling.stepDown()"
-									class="amount__down">-</button>
-								<input type="number" min="1" max="10" step="1" value="1" readonly class="amount__number">
-								<button type="button" onclick="this.previousElementSibling.stepUp()"
-									class="amount__up">+</button>
-							</div>
+					<form action="" method="post" class="tickets__form">
+						<div class="form__ticket-type">
+							<h4 class="form__title">Ticket Type</h4>
+							<label for="form__ticket_type_permanent" class="form__radio-label">
+								<input type="radio" value="permanent" checked name="exhibition" id="form__ticket_type_permanent"
+									class="form__radio">Permanent exhibition
+								<div class="form__radio_style_black"></div>
+							</label>
+							<label for="form__ticket_type_temporary" class="form__radio-label">
+								<input type="radio" value="temporary" name="exhibition" id="form__ticket_type_temporary"
+									class="form__radio">Temporary exhibition
+								<div class="form__radio_style_black"></div>
+							</label>
+							<label for="form__ticket_type_combined" class="form__radio-label">
+								<input type="radio" value="combined" name="exhibition" id="form__ticket_type_combined"
+									class="form__radio">Combined Admission
+								<div class="form__radio_style_black"></div>
+							</label>
 						</div>
-						<div class="amount__inner">
-							<p class="amount__title">Senior 65+</p>
-							<div class="amount__btn-inner">
-								<button type="button" onclick="this.nextElementSibling.stepDown()"
-									class="amount__down">-</button>
-								<input type="number" min="1" max="10" step="1" value="1" readonly class="amount__number">
-								<button type="button" onclick="this.previousElementSibling.stepUp()"
-									class="amount__up">+</button>
+						<div class="form__ticket-amount">
+							<h4 class="form__title">Amount</h4>
+							<div class="amount__inner">
+								<p class="amount__title">Basic 18+</p>
+								<div class="amount__btn-inner">
+									<button type="button" onclick="this.nextElementSibling.stepDown()"
+										class="ticket-item amount-item ticket-btn amount-btn amount-down">-</button>
+									<input type="number" min="1" max="10" step="1" value="1" readonly
+										class="ticket-item amount-item ticket-number amount-number">
+									<button type="button" onclick="this.previousElementSibling.stepUp()"
+										class="ticket-item amount-item ticket-btn amount-btn amount-up">+</button>
+								</div>
 							</div>
+							<div class="amount__inner">
+								<p class="amount__title">Senior 65+</p>
+								<div class="amount__btn-inner">
+									<button type="button" onclick="this.nextElementSibling.stepDown()"
+										class="ticket-item amount-item ticket-btn amount-btn amount-down">-</button>
+									<input type="number" min="1" max="10" step="1" value="1" readonly
+										class="ticket-item amount-item ticket-number amount-number">
+									<button type="button" onclick="this.previousElementSibling.stepUp()"
+										class="ticket-item amount-item ticket-btn amount-btn amount-up">+</button>
+								</div>
+							</div>
+							<p class="tickets__total">Total €220</p>
+							<button type="button" class="button button_type_dark tickets__button">Buy Now</button>
 						</div>
-						<p class="tickets__total-sum">Total € 220</p>
-						<button type="button" class="button button_type_dark tickets__button">Buy Now</button>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 			<div class="parallax"></div>
 		</section>

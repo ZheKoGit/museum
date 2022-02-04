@@ -15,7 +15,7 @@ function displayImagesRandomOrder() {
 		}
 		ArrayImages = shuffleArray(ArrayImages);
 		displayPictures(ArrayImages);
-		console.log(ArrayImages);
+		//console.log(ArrayImages);
 	}
 	createArrayImages();
 
@@ -23,7 +23,7 @@ function displayImagesRandomOrder() {
 	function shuffleArray(arr) {
 		const arrRandom = [];
 		let number = findRandomNumber(arr.length - 1);
-		for (let i = 0; arrRandom.length - 1 < arr.length - 1; i++) {
+		while (arrRandom.length - 1 < arr.length - 1) {
 			if (arrRandom.includes(arr[number])) {
 				number = findRandomNumber(arr.length - 1);
 			} else {
