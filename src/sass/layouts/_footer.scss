@@ -1,0 +1,42 @@
+.footer {
+	padding: 85px 0 50px;
+}
+
+.footer-link {
+	flex-basis: 1100px;
+}
+
+.footer-inner-list {
+	flex-basis: 363px;
+	height: 130px;
+}
+
+.navigation-footer {
+flex-direction: column;
+flex-wrap: wrap;
+height: 100%;
+align-items: flex-start;
+justify-content: flex-start;
+font-weight: 100;
+letter-spacing: 2px;
+& > * {
+	margin: 0 0 25px;
+	&:nth-child(3n) {
+		margin: 0;
+	}
+}
+}
+
+.footer-social {
+	align-items: flex-end;
+}
+
+.line {
+	height: 3px;
+	margin: 50px 0;
+	background-color: $color-social;
+}
+
+.text__under-line {
+	margin: 0;
+}

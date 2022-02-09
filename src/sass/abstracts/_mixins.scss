@@ -5,7 +5,7 @@
 	line-height: $height;
 }
 
-@mixin columns ($width) {
+@mixin columns ($width: auto) {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;

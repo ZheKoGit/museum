@@ -218,7 +218,7 @@
 					</div>
 					<form action="" method="post" class="tickets__form">
 						<div class="form__ticket-type">
-							<h4 class="form__title">Ticket Type</h4>
+							<h4 class="title-h4 form__title">Ticket Type</h4>
 							<label for="form__ticket_type_permanent" class="form__radio-label">
 								<input type="radio" value="permanent" checked name="exhibition" id="form__ticket_type_permanent"
 									class="form__radio">Permanent exhibition
@@ -236,7 +236,7 @@
 							</label>
 						</div>
 						<div class="form__ticket-amount">
-							<h4 class="form__title">Amount</h4>
+							<h4 class="title-h4 form__title">Amount</h4>
 							<div class="amount__inner">
 								<p class="amount__title">Basic 18+</p>
 								<div class="amount__btn-inner">
@@ -267,25 +267,40 @@
 			</div>
 			<div class="parallax"></div>
 		</section>
+		<article class="booking">
+			<form action="" method="post" class="booking-form">
+				<div class="form__left">
+					<div class="form__logo"></div>
+				</div>
+				<div class="form__right"></div>
+			</form>
+		</article>
 		<section class="section wrapper_theme_light contacts">
 			<div class="container">
 				<h2 class="title title_theme_on-light title__border_true">Contacts</h2>
-				<p class="contacts__content">
-				<h4 class="contacts__title-content">Palais Royal Musee du Louvre</h4>
-				<p class="contacts__address">address: 75001 Paris, France</p>
-				<p><a href="tel:+33(0) 1 40 20 50 50" class="contacts__phone">phone: +33(0) 1 40 20 50 50</a></p>
-				<p><a href="mailto:info@louvre.fr" class="contacts__mail">mail: info@louvre.fr</a></p>
-			</div>
-			<div class="contacts__map"></div>
+				<div class="contacts-wrapper">
+					<div class="contacts__content">
+						<h4 class="title-h4 contacts__title-content"><span class="contacts__title-name">Palais Royal</span>
+							Musee du Louvre</h4>
+						<p class="contacts__text contacts__address">address: 75001 Paris, France</p>
+						<p><a href="tel:+33(0) 1 40 20 50 50" class="contacts__text contacts__link contacts__phone">phone:
+								+33(0)
+								1 40 20 50
+								50</a></p>
+						<p><a href="mailto:info@louvre.fr" class="contacts__text contacts__link contacts__mail">mail:
+								info@louvre.fr</a></p>
+					</div>
+					<div class="contacts__map"></div>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="wrapper_theme_dark footer">
-		<div class="container">
-			<a href="" class="logo">Louvre</a>
-			<div class="layout-2-column">
-				<div class="layout-2-column">
-					<ul class="navigation">
+		<div class="container layout-column">
+			<a href="" class="logo"><span class="logo__image"></span>Louvre</a>
+			<div class="layout-column footer-link">
+				<div class="footer-inner-list">
+					<ul class="navigation navigation-footer layout-column">
 						<li class="navigation__item"><a href="" class="navigation__link">Visiting</a></li>
 						<li class="navigation__item"><a href="" class="navigation__link">Explore</a></li>
 						<li class="navigation__item"><a href="" class="navigation__link">Video</a></li>
@@ -294,43 +309,18 @@
 						<li class="navigation__item"><a href="" class="navigation__link">Contacts</a></li>
 					</ul>
 				</div>
-				<div class="social">
-					<a href="" class="social__link">
-						<object data="src/img/icons/social/youtube.svg" type="image/svg+xml">
-							You browser does not support SVG
-							<img src="src/img/icons/social/youtube.png">
-						</object>
-					</a>
-					<a href="" class="social__link">
-						<object data="src/img/icons/social/instagram.svg" type="image/svg+xml">
-							You browser does not support SVG
-							<img src="src/img/icons/social/instagram.png">
-						</object>
-					</a>
-					<a href="" class="social__link">
-						<object data="src/img/icons/social/facebook.svg" type="image/svg+xml">
-							You browser does not support SVG
-							<img src="src/img/icons/social/facebook.png">
-						</object>
-					</a>
-					<a href="" class="social__link">
-						<object data="src/img/icons/social/twitter.svg" type="image/svg+xml">
-							You browser does not support SVG
-							<img src="src/img/icons/social/twitter.png">
-						</object>
-					</a>
-					<a href="" class="social__link">
-						<object data="src/img/icons/social/pinterest.svg" type="image/svg+xml">
-							You browser does not support SVG
-							<img src="src/img/icons/social/pinterest.png">
-						</object>
-					</a>
+				<div class="social footer-social layout-column">
+					<a href="" class="social__link social-youtube">youtube</a>
+					<a href="" class="social__link social-instagram"></a>
+					<a href="" class="social__link social-facebook"></a>
+					<a href="" class="social__link social-twitter"></a>
+					<a href="" class="social__link social-pinterest"></a>
 				</div>
 			</div>
 		</div>
 		<div class="line"></div>
 		<div class="container">
-			<div class="footer__wrapper_under-line">
+			<div class="layout-column footer__wrapper_under-line">
 				<p class="text__under-line">© 2021</p>
 				<p class="text__under-line">The Rolling Scopes School</p>
 				<p class="text__under-line">Username</p>

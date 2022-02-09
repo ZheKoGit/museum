@@ -6,3 +6,7 @@
 		width: 29%;
 	}*/
 }
+
+.layout-column {
+	@include columns ();
+}
