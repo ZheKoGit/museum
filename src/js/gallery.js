@@ -47,3 +47,5 @@ function displayImagesRandomOrder() {
 	}
 }
 displayImagesRandomOrder();
+
+export default displayImagesRandomOrder;

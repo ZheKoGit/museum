@@ -2,7 +2,7 @@ body {
   font-family: "Roboto", Verdana, sans-serif;
 }
 
-.virtual-tour__title, .logo, .title {
+.form__left-subtitle, .booking__title, .virtual-tour__title, .logo, .title {
   font-family: "Forum", Verdana, sans-serif;
 }
 
@@ -12,6 +12,7 @@ body {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -958,16 +959,38 @@ a {
   background-image: url("../img/icons/player/fullscreen.svg");
 }
 
+.ticket__btn-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  height: 50px;
+  font-size: 0;
+  border: 3px solid #000000;
+}
+
 .ticket-item {
+  width: 48px;
+  height: 100%;
   border: none;
   vertical-align: middle;
 }
 
+.ticket-btn {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  background-color: #FFFFFF;
+}
 .ticket-btn:hover {
   background-color: #710707;
 }
 
 .ticket-number {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
   text-align: center;
 }
 
@@ -1254,30 +1277,6 @@ a {
   margin: 0 0 15px;
 }
 
-.amount__btn-inner {
-  font-size: 0;
-  outline: 3px solid #000000;
-}
-
-.amount-item {
-  width: 50px;
-}
-
-.amount-btn {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 3.7rem;
-  background-color: #FFFFFF;
-}
-
-.amount-number {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.2rem;
-  line-height: 2.6rem;
-}
-
 .tickets__total {
   margin: 0 0 60px;
   font-style: normal;
@@ -1367,6 +1366,305 @@ a {
 
 .text__under-line {
   margin: 0;
+}
+
+.booking {
+  max-width: 970px;
+  padding: 91px 0;
+  margin: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #030303;
+}
+
+.form__left {
+  flex-basis: 400px;
+}
+
+.form__right {
+  flex-basis: 530px;
+  padding: 25px 30px 26px;
+  border: 1px solid #030303;
+}
+
+.booking__logo {
+  width: 85px;
+  height: 41px;
+  background-image: url("../img/icons/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: invert(61%) sepia(8%) saturate(1462%) hue-rotate(356deg) brightness(165%) contrast(86%);
+}
+
+.booking__title {
+  margin: 0 0 15px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 5rem;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+}
+
+.booking__subtitle {
+  padding: 0 0 10px;
+  margin: 0 0 60px;
+}
+
+.booking-input {
+  width: 400px;
+  height: 45px;
+  margin: 0 0 20px;
+  padding: 13px 45px;
+  border: 1px solid #030303;
+}
+
+.booking__date-inner .date {
+  width: 190px;
+}
+
+.time {
+  width: 190px;
+}
+
+.form__left-inner {
+  padding: 10px 15px 15px;
+  border: 1px solid #030303;
+}
+
+.form__left-subtitle {
+  padding: 0 0 5px;
+  margin: 0 0 15px;
+  line-height: 2rem;
+  text-transform: capitalize;
+  border-bottom-width: 2px;
+}
+
+.booking__amount-inner {
+  align-items: center;
+  margin: 0 0 15px;
+}
+.booking__amount-inner:last-child {
+  margin: 0;
+}
+
+.booking__amount-title {
+  margin: 0;
+}
+
+.booking__amount-inner .ticket__btn-inner {
+  width: 105px;
+  height: 25px;
+  border-width: 1px;
+}
+.booking__amount-inner .ticket-btn {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.booking__amount-inner .ticket-btn:hover {
+  background-color: #710707;
+}
+.booking__amount-inner .ticket-item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+.form__right-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 22px;
+}
+
+.form__right-title {
+  margin: 0 0 2px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+}
+
+.form__right-subtitle {
+  margin: 0 0 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  color: #710707;
+  opacity: 0.9;
+}
+
+.form__overview-text {
+  margin: 5px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.text-data {
+  background-image: url("../img/booking_tickets/date.svg");
+}
+
+.text-time {
+  background-image: url("../img/booking_tickets/Time.svg");
+}
+
+.text-type {
+  background-image: url("../img/booking_tickets/type.svg");
+}
+
+.form__image {
+  width: 150px;
+  height: 120px;
+  background-image: url("../img/booking_tickets/1.jpg");
+  background-repeat: no-repeat;
+}
+
+.price__text {
+  display: inline-flex;
+  width: 100%;
+  margin: 0 0 5px;
+}
+.price__text.title__border_true {
+  padding: 0 0 9px;
+  margin: 0 0 10px;
+  border-bottom-width: 2px;
+}
+
+.number__text {
+  display: inline-block;
+  width: 32px;
+  height: 20px;
+  margin-right: 10px;
+  color: #A4A4A3;
+  text-align: center;
+  background-color: #030303;
+  border-radius: 15%;
+}
+
+.ticket__price,
+.total__text {
+  margin-right: auto;
+}
+
+.ticket__price,
+.number__price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.number__price {
+  text-align: end;
+}
+
+.form__right-total {
+  margin: 0 0 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+}
+
+.card-inner {
+  width: 360px;
+  height: 211px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  border-radius: 0.5em;
+}
+
+.card__frond {
+  padding: 15px 20px;
+  background-color: #BCBCBC;
+}
+
+.card-wrapper {
+  position: relative;
+  color: #161615;
+}
+
+.card__frond-input {
+  flex-basis: 215px;
+}
+
+.card__label {
+  display: block;
+  margin: 0 0 5px;
+}
+
+.card__date-wrapper {
+  flex-wrap: nowrap;
+}
+
+.card__date {
+  width: 100px;
+}
+
+.card__input {
+  height: 35px;
+  margin: 0 0 10px;
+}
+
+.card-number,
+.card__name {
+  width: 100%;
+}
+
+.card__frond-logo {
+  width: 55px;
+  padding: 19px 0 0;
+}
+
+.card__image {
+  margin: 0 0 15px;
+}
+
+.card__back {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: -1;
+  padding: 25px 0 15px;
+  background-color: #939393;
+}
+
+.card__strip {
+  width: 100%;
+  height: 45px;
+  margin: 0 0 15px;
+  background-color: #161615;
+}
+
+.card__cvc-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75px;
+  margin-left: auto;
+  padding: 0 20px 0 0;
+}
+
+.card__cvc {
+  width: 75px;
+  margin: 0 0 6px;
+}
+
+.card__back-text {
+  width: 55px;
+  margin: 0;
+}
+
+.button__card {
+  margin: 56px 0 0 auto;
+  width: 220px;
+  height: 45px;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

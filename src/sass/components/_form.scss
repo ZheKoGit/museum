@@ -1,9 +1,22 @@
+.ticket__btn-inner {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	height: 50px;
+	font-size: 0;
+	border: 3px solid $color-dark;
+}
+
 .ticket-item {
+	width: 48px;
+	height: 100%;
 	border: none;
 	vertical-align: middle;
 }
 
 .ticket-btn {
+	@include font($size: 3.2rem, $height: 3.7rem);
+	background-color: $color-light;
 	@extend %transition;
 	&:hover {
 		background-color: $color-button;
@@ -11,5 +24,6 @@
 }
 
 .ticket-number {
+	@include font($size: 2.2rem, $height: 2.6rem);
 	text-align: center;
 }

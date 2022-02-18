@@ -89,24 +89,6 @@
 	margin: 0 0 15px;
 }
 
-.amount__btn-inner {
-	font-size: 0;
-	outline: 3px solid $color-dark;
-}
-
-.amount-item {
-	width: 50px;
-}
-
-.amount-btn {
-	@include font($size: 3.2rem, $height: 3.7rem);
-	background-color: $color-light;
-}
-
-.amount-number {
-	@include font($size: 2.2rem, $height: 2.6rem);
-}
-
 .tickets__total {
 	margin: 0 0 60px;
 	@include font($size: 2.8rem, $height: 3.3rem, $weight: 700);

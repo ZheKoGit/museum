@@ -1,3 +1,5 @@
+import gallery from './js/gallery.js';
+
 window.onload = () => {
 	//console.dir(document.querySelector('.amount__number'));
 	//changeNumberTickets();
@@ -5,6 +7,7 @@ window.onload = () => {
 	//console.log(document.querySelector('.play-range'));
 	changeStylePlayerRange();
 	startPlayer();
+	gallery();
 }
 
 /*const changeNumberTickets = document.querySelector('.amount__up').addEventListener('click', function () {
