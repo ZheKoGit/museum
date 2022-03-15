@@ -13,9 +13,9 @@ function displayImagesRandomOrder() {
 			image.alt = `image`;
 			ArrayImages.push(image);
 		}
+		//console.log(ArrayImages);
 		ArrayImages = shuffleArray(ArrayImages);
 		displayPictures(ArrayImages);
-		//console.log(ArrayImages);
 	}
 	createArrayImages();
 
@@ -40,12 +40,11 @@ function displayImagesRandomOrder() {
 
 	// отобрази картинки
 	function displayPictures(arr) {
-		//const arrNew = arr.map(function (image) { galleryInner.append(image) });
 		arr.forEach(image => {
 			galleryInner.append(image);
 		})
+		//console.log(arr);
 	}
 }
-displayImagesRandomOrder();
 
 export default displayImagesRandomOrder;

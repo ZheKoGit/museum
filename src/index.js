@@ -1,4 +1,5 @@
 import gallery from './js/gallery.js';
+import { openForm } from './js/tickets.js';
 
 window.onload = () => {
 	//console.dir(document.querySelector('.amount__number'));
@@ -8,6 +9,7 @@ window.onload = () => {
 	changeStylePlayerRange();
 	startPlayer();
 	gallery();
+	openForm();
 }
 
 /*const changeNumberTickets = document.querySelector('.amount__up').addEventListener('click', function () {
