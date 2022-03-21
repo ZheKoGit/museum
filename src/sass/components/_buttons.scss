@@ -20,3 +20,56 @@
 .button_type_dark {
 	background-color: $color-dark;
 }
+
+.navigation-button {
+	display: none;
+	position: relative;
+	width: 32px;
+	height: 18px;
+	cursor: pointer;
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 32px;
+		height: 2px;
+		background-color: $color-light;
+		@extend %transition;
+	}
+	&:before {
+		top: 0;
+	}
+	&:after {
+		bottom: 0;
+	}
+}
+
+.navigation-button__strip {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 32px;
+	height: 2px;
+	background-color: $color-light;
+	transform: translateY(-50%);
+}
+
+.navigation-button_theme_closed {
+	&::before {
+		transform: rotate(45deg) translate(6px,5px);
+	}
+	&::after {
+		transform: rotate(-45deg) translate(6px,-5px);
+	}
+}
+
+.navigation-button__strip_disabled {
+	display: none;
+}
+
+@include media-laptop {
+	.navigation-button {
+		display: block;
+	}
+}

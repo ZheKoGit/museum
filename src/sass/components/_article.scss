@@ -1,3 +1,7 @@
+.virtual-tour__inner {
+	width: calc(33.3% - 39.5px);
+}
+
 .virtual-tour__link {
 	display: flex;
 	flex-direction: column;
@@ -13,6 +17,8 @@
 }
 
 .virtual-tour__image {
+	width: 100%;
+   height: auto;
 	order: -1;
 }
 
@@ -29,7 +35,7 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 300px;
+		width: calc(100% - 140px);
 		height: 2px;
 		background-color: $color-button;
 		@extend %transition;

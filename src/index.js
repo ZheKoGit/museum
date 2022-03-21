@@ -1,3 +1,4 @@
+import showMenu from './js/header.js'
 import gallery from './js/gallery.js';
 import { openForm } from './js/tickets.js';
 
@@ -6,6 +7,7 @@ window.onload = () => {
 	//changeNumberTickets();
 	//let amountNumber = document.querySelector('.amount__number');
 	//console.log(document.querySelector('.play-range'));
+	showMenu();
 	changeStylePlayerRange();
 	startPlayer();
 	gallery();

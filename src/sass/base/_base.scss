@@ -35,6 +35,9 @@ body {
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	white-space: nowrap;
+	@include media-laptop {
+		@include font($size: 5rem, $height: 7.5rem, $weight: 400);
+	}
 }
 
 .title_theme_on-dark {

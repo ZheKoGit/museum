@@ -4,13 +4,32 @@
 	align-items: center;
 	column-gap: 55px;
 	flex-wrap: wrap;
+	@include media-laptop {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
 }
 
 .navigation__link {
+	display: block;
 	letter-spacing: 2px;
 	color: $color-light;
 	@extend %transition;
 	&:hover {
 		color: $color-title;
+	}
+	@include media-laptop {
+		width: 122px;
+		padding: 12.5px 0;
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		background-image: url('../img/icons/arrow.svg');
+		&:hover {
+			filter: invert(53%) sepia(43%) saturate(267%) hue-rotate(356deg) brightness(93%) contrast(91%);
+		}
+	}
+	@include media-tablet {
+		@include font($size: 2rem, $height: 2.3rem);
 	}
 }
