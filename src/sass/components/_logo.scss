@@ -5,6 +5,11 @@
 	@extend %font-add;
 	color: $color-light;
 	letter-spacing: 5px;
+	text-transform: uppercase;
+
+	@include media-mobile {
+		@include font($size: 1.6rem, $height: 1.8rem, $weight: 400);
+	}
 }
 
 .logo__image {
@@ -14,4 +19,11 @@
 	margin-right: 25px;
 	background-image: url('../img/icons/logo.svg');
 	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-mobile {
+		width: 29px;
+		height: 16px;
+		margin-right: 20px;
+	}
 }

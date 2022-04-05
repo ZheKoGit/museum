@@ -2,14 +2,22 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+
 	@include media-tablet {
 		align-items: center;
+	}
+}
+
+.slider__image_hidden {
+	@include media-tablet {
+		display: none;
 	}
 }
 
 .slider__image-inner {
 	position: relative;
 	max-width: calc(100vw - 480px);
+
 	&:after {
 		content: '';
 		position: absolute;
@@ -18,13 +26,16 @@
 		width: 100%;
 		height: 100%;
 		background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+
 		@include media-tablet {
 			background-image: none;
 		}
 	}
+
 	@include media-laptop {
-	max-width: calc(100vw - 324px);
+		max-width: calc(100vw - 324px);
 	}
+
 	@include media-tablet {
 		max-width: 100%;
 		margin: 0 0 30px;
@@ -35,9 +46,8 @@
 	max-width: 100%;
 	height: auto;
 	vertical-align: middle;
-	@include media-tablet {
-		
-	}
+
+	@include media-tablet {}
 }
 
 .slider__control {
@@ -52,17 +62,24 @@
 	@include font($size: 2.2rem, $height: 4rem, $weight: 400);
 	color: $color-light;
 	background-color: $color-background-dark;
+
 	@include media-laptop {
 		justify-content: flex-end;
 		width: 100%;
 		font-size: 2rem;
 	}
+
 	@include media-tablet {
 		position: static;
 		justify-content: space-between;
 		max-width: 401px;
 		height: auto;
 		padding: 0;
+	}
+
+	@include media-mobile {
+		justify-content: center;
+		font-size: 1.6rem;
 	}
 }
 
@@ -72,10 +89,18 @@
 
 .number__slider_active {
 	margin-right: 10px;
+
+	@include media-mobile {
+		margin-right: 5px;
+	}
 }
 
 .number__sliders_total {
 	margin-left: 10px;
+
+	@include media-mobile {
+		margin-left: 5px;
+	}
 }
 
 .slider__map {
@@ -90,18 +115,28 @@
 	background-color: $color-light;
 	border: none;
 	@extend %transition;
+
 	&:last-child {
 		margin-right: 0;
 	}
+
 	&_active {
 		background-color: $color-slider;
 	}
+
 	&:hover {
 		background-color: $color-title;
 	}
+
 	@include media-laptop {
 		width: 12px;
 		height: 12px;
+	}
+
+	@include media-mobile {
+		width: 7px;
+		height: 7px;
+		margin-right: 10px;
 	}
 }
 
@@ -114,6 +149,10 @@
 .image__slider-direction {
 	width: 30px;
 	height: 8px;
+
+	@include media-mobile {
+		width: 20px;
+	}
 }
 
 .slider__button-item {
@@ -126,15 +165,25 @@
 .slider__button_left {
 	margin-right: 20px;
 	background-image: url('../img/icons/left.svg');
+
 	&:hover {
 		background-image: url('../img/icons/left_hover.svg');
+	}
+
+	@include media-mobile {
+		margin-right: 15px;
 	}
 }
 
 .slider__button_right {
 	background-image: url('../img/icons/right.svg');
+
 	&:hover {
 		background-image: url('../img/icons/right_hover.svg');
+	}
+
+	@include media-mobile {
+		background-position: right;
 	}
 }
 
@@ -169,6 +218,7 @@
 .video__slider-direction {
 	width: 10px;
 	height: 12px;
+
 	&:hover {
 		filter: invert(14%) sepia(66%) saturate(2636%) hue-rotate(341deg) brightness(50%) contrast(115%);
 	}
@@ -189,9 +239,11 @@
 	border: none;
 	background-color: $color-slider-position;
 	@extend %transition;
+
 	&_active {
 		background-color: $color-slider-position-active;
 	}
+
 	&:hover {
 		background-color: $color-button;
 	}
