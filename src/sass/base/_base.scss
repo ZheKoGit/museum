@@ -17,6 +17,14 @@ body {
 
 .section {
 	padding: 75px 0;
+
+	@include media-laptop {
+		padding: 60px 0;
+	}
+
+	@include media-tablet {
+		padding: 40px 0;
+	}
 }
 
 .wrapper_theme_dark {
@@ -35,8 +43,19 @@ body {
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	white-space: nowrap;
+
 	@include media-laptop {
+		margin: 0 0 60px;
 		@include font($size: 5rem, $height: 7.5rem, $weight: 400);
+	}
+
+	@include media-tablet {
+		margin: 0 0 40px;
+		@include font($size: 4rem, $height: 6rem, $weight: 400);
+	}
+
+	@include media-mobile {
+		@include font($size: 2.8rem, $height: 4rem, $weight: 400);
 	}
 }
 
@@ -51,6 +70,10 @@ body {
 .title__border_true {
 	padding-bottom: 25px;
 	border-bottom: 3px solid $color-button;
+
+	@include media-laptop {
+		padding-bottom: 20px;
+	}
 }
 
 .title-h4 {
@@ -58,5 +81,10 @@ body {
 }
 
 .text {
+	margin: 0;
 	line-height: 3.8rem;
+
+	@include media-laptop {
+		@include font($size: 2rem, $height: 3.8rem);
+	}
 }

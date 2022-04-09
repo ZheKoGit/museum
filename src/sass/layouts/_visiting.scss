@@ -1,5 +1,25 @@
+.visiting {
+	padding-bottom: 0;
+
+	@include media-tablet {
+		padding-bottom: 40px;
+	}
+
+	@include media-mobile {
+		padding-bottom: 0;
+	}
+}
+
 .visiting-wrapper {
-	.layout-3-column > * {
-		flex-basis: auto;
+	.layout-3-column {
+		column-gap: 20px;
+
+		>* {
+			flex-basis: auto;
+		}
+
+		@include media-laptop {
+			justify-content: space-evenly;
+		}
 	}
 }

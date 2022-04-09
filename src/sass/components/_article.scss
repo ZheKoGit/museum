@@ -1,5 +1,17 @@
 .virtual-tour__inner {
 	width: calc(33.3% - 39.5px);
+
+	@include media-laptop {
+		width: calc(50% - 162px);
+	}
+
+	@include media-tablet {
+		width: calc(50% - 84px);
+	}
+
+	@include media-mobile {
+		width: calc(100% - 100px);
+	}
 }
 
 .virtual-tour__link {
@@ -7,6 +19,7 @@
 	flex-direction: column;
 	color: $color-dark;
 	margin: 0 0 75px;
+
 	&:hover {
 		.virtual-tour__title {
 			&::after {
@@ -14,11 +27,19 @@
 			}
 		}
 	}
+
+	@include media-laptop {
+		margin: 0 0 60px;
+	}
+
+	@include media-tablet {
+		margin: 0 0 40px;
+	}
 }
 
 .virtual-tour__image {
 	width: 100%;
-   height: auto;
+	height: auto;
 	order: -1;
 }
 
@@ -30,6 +51,9 @@
 	@extend %font-add;
 	letter-spacing: 5px;
 	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: auto;
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -40,14 +64,44 @@
 		background-color: $color-button;
 		@extend %transition;
 	}
+
+	@include media-laptop {
+		@include font($size: 2.8rem, $height: 3.1rem, $weight: 400);
+	}
+
+	@include media-tablet {
+		@include font($size: 2.2rem, $height: 2.4rem, $weight: 400);
+		letter-spacing: 3px;
+	}
+
+	@include media-mobile {
+		@include font($size: 1.8rem, $height: 2rem, $weight: 400);
+		letter-spacing: 5px;
+	}
 }
 
 .virtual-tour__overview {
 	margin: 0 0 10px;
 	@include font($size: 2.2rem, $height: 2.6rem);
+
+	@include media-laptop {
+		@include font($size: 2.0rem, $height: 2.3rem, $weight: 100);
+	}
+
+	@include media-tablet {
+		@include font($size: 1.8rem, $height: 2.1rem, $weight: 100);
+	}
+
+	@include media-mobile {
+		@include font($size: 1.6rem, $height: 1.9rem, $weight: 100);
+	}
 }
 
 .virtual-tour__street {
 	margin: 0;
 	@include font($size: 1.8rem, $height: 2.1rem);
+
+	@include media-laptop {
+		@include font($size: 1.6rem, $height: 1.9rem, $weight: 100);
+	}
 }
