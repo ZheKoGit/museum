@@ -44,6 +44,20 @@
 	}
 }
 
-.explore__slider {
-	max-width: 720px;
+.comparing__images {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+
+	img {
+		display: block;
+		vertical-align: middle;
+		height: auto;
+	}
+}
+
+.comparing__images_after {
+	img {
+		width: 100%;
+	}
 }

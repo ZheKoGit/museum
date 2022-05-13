@@ -187,19 +187,25 @@
 	}
 }
 
-.slider-comparison {
+.comparing__images-wrapper {
 	position: relative;
+	max-width: 720px;
 }
 
-.slider-comparison__control {
+.comparing__images_before {
 	position: absolute;
 	top: 0;
-	left: 60%;
+}
+
+.comparing__images-control {
+	position: absolute;
+	top: 0;
 	width: 39px;
 	height: 100%;
 	background-image: url('../img/icons/explore_slider.svg');
 	background-repeat: no-repeat;
 	background-position: center;
+	cursor: e-resize;
 }
 
 .player_size_small {

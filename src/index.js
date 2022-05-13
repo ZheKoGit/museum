@@ -1,4 +1,6 @@
-import showMenu from './js/header.js'
+import showMenu from './js/header.js';
+//import sliderWelcome from './js/welcome';
+import comparing from './js/explore.js';
 import gallery from './js/gallery.js';
 import { openForm } from './js/tickets.js';
 
@@ -8,6 +10,8 @@ window.onload = () => {
 	//let amountNumber = document.querySelector('.amount__number');
 	//console.log(document.querySelector('.play-range'));
 	showMenu();
+	//sliderWelcome();
+	comparing();
 	changeStylePlayerRange();
 	startPlayer();
 	gallery();

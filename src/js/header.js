@@ -16,10 +16,10 @@ function showMenu() {
 		navigationSmallDisplay.classList.toggle('navigation__small-display_show');
 		welcomeWrapper.classList.toggle('navigation__container');
 	})
-	const mainElement = document.documentElement; // обращаемся к тегу HTML
+	/*const mainElement = document.documentElement; // обращаемся к тегу HTML
 	const mainElementWidth = mainElement.clientWidth;
 
-	console.log(mainElementWidth);
+	console.log(mainElementWidth);*/
 }
 
 export default showMenu;
