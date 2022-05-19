@@ -1,11 +1,35 @@
+.video {
+	@include media-tablet {
+		padding-bottom: 80px;
+	}
+
+	@include media-mobile {
+		padding: 36px 0 40px;
+	}
+}
+
 .video__content {
 	display: inline-flex;
 	justify-content: space-between;
 	width: 100%;
+
+	.title {
+		@include media-laptop {
+			margin-bottom: 40px;
+		}
+
+		@include media-tablet {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 .video__text {
 	max-width: 720px;
 	margin: 0;
 	margin-left: 20px;
+
+	@include media-laptop {
+		display: none;
+	}
 }
