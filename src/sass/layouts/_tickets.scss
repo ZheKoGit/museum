@@ -1,0 +1,100 @@
+.tickets {
+	margin: 75px 0 0;
+}
+
+.tickets__inner {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 75px;
+}
+
+.tickets__image-wrapper {
+	flex-basis: 720px;
+	margin-right: 60px;
+}
+
+.tickets-image {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.tickets__form {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 660px;
+}
+
+.form__title {
+	margin: 0 0 50px;
+}
+
+.form__radio-label {
+	position: relative;
+	display: block;
+	padding-left: 40px;
+	margin-bottom: 25px;
+}
+
+.form__radio_style_black {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	//margin-right: 25px;
+	border: 2px solid $color-dark;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 7px;
+		height: 7px;
+		background-color: $color-dark;
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+	}
+}
+
+.form__radio {
+	position: absolute;
+	top: 0;
+	left: 0;
+	//margin-right: 23px;
+	visibility: hidden;
+}
+
+.form__radio:checked + .form__radio_style_black::after {
+	opacity: 1;
+}
+
+.form__ticket-amount {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.amount__inner {
+	margin: 0 0 10px;
+	&:last-of-type {
+		margin: 0 0 50px;
+	}
+}
+
+.amount__title {
+	margin: 0 0 15px;
+}
+
+.tickets__total {
+	margin: 0 0 60px;
+	@include font($size: 2.8rem, $height: 3.3rem, $weight: 700);
+}
+
+.tickets__button {
+	width: 175px;
+	height: 50px;
+}

@@ -1,0 +1,34 @@
+.contacts-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts__content {
+	max-width: 285px;
+}
+
+.contacts__title-content {
+	margin: 0 0 50px;
+	font-weight: 500;
+}
+
+.contacts__title-name {
+	display: block;
+}
+
+.contacts__text {
+	margin: 0 0 25px;
+}
+
+.contacts__link {
+	color: $color-dark;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.contacts__map {
+	flex-basis: 960px;
+	height: 620px;
+	background-color: gray;
+}

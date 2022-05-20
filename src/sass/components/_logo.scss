@@ -1,0 +1,29 @@
+.logo {
+	display: flex;
+	width: 200px;
+	@include font($size: 2.8rem, $height: 3.1rem, $weight: 400);
+	@extend %font-add;
+	color: $color-light;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+
+	@include media-mobile {
+		@include font($size: 1.6rem, $height: 1.8rem, $weight: 400);
+	}
+}
+
+.logo__image {
+	display: inline-block;
+	width: 49px;
+	height: 26px;
+	margin-right: 25px;
+	background-image: url('../img/icons/logo.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-mobile {
+		width: 29px;
+		height: 16px;
+		margin-right: 20px;
+	}
+}

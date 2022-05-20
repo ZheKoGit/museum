@@ -1,0 +1,315 @@
+.player-wrapper {
+	position: relative;
+	//max-height: 735px;
+	margin-bottom: 40px;
+
+	@include media-tablet {
+		margin-bottom: 21px;
+	}
+
+	@include media-mobile {
+		margin-bottom: 40px;
+	}
+}
+
+.player-inner {
+	position: relative;
+	width: 100%;
+	//max-height: 735px;
+	padding-top: 45.14%;
+	//object-fit: cover;
+	overflow: hidden;
+	cursor: pointer;
+
+	&:hover {
+		.player__play_size_big {
+			border-color: $color-player;
+
+			&::after {
+				border-left-color: $color-player;
+			}
+		}
+	}
+}
+
+.player-link {
+	position: absolute;
+	top: 0;
+	height: 0;
+	display: block;
+	width: 100%;
+	//height: 650px;
+	height: 100%;
+	//overflow: hidden;
+	background-image: url('../video/poster0.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	&_hidden {
+		display: none;
+	}
+}
+
+.player-poster {
+	width: 100%;
+	//height: 100%;
+	//object-fit: cover;
+	vertical-align: middle;
+}
+
+.player__iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.player__play_size_big {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 220px;
+	height: 220px;
+	border: 8px solid $color-light;
+	border-radius: 50%;
+	background-color: transparent;
+	transform: translate(-50%, -50%);
+	@extend %transition;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 40px;
+		left: 70px;
+		border-top: 60px solid transparent;
+		border-left: 91px solid $color-light;
+		border-bottom: 60px solid transparent;
+		@extend %transition;
+
+		@include media-laptop {
+			top: 25px;
+			left: 50px;
+			border-top-width: 42px;
+			border-left-width: 63px;
+			border-bottom-width: 42px;
+		}
+
+		@include media-tablet {
+			top: 16px;
+			left: 26px;
+			border-top-width: 20px;
+			border-left-width: 34px;
+			border-bottom-width: 20px;
+		}
+
+		@include media-mobile {
+			top: 10px;
+			left: 15px;
+			border-top-width: 13px;
+			border-left-width: 23px;
+			border-bottom-width: 13px;
+		}
+	}
+
+	&_hidden {
+		display: none;
+	}
+
+	@include media-laptop {
+		width: 152px;
+		height: 152px;
+	}
+
+	@include media-tablet {
+		width: 80px;
+		height: 80px;
+		border-width: 3px;
+	}
+
+	@include media-mobile {
+		width: 50px;
+		height: 50px;
+		border-width: 2px;
+	}
+}
+
+.player-wrapper__video_position {
+	display: none;
+}
+
+.player__control {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 50px;
+	width: 100%;
+	padding: 25px 30px;
+	background-color: $color-dark;
+
+	@include media-laptop {
+		column-gap: 30px;
+		padding: 15px 40px;
+	}
+
+	@include media-tablet {
+		position: relative;
+		column-gap: 30px;
+		padding: 12px 30px;
+	}
+
+	@include media-mobile {
+		padding: 16px 20px;
+	}
+}
+
+.player__control-range {
+	-webkit-appearance: none;
+	height: 8px;
+	background: linear-gradient(to right, $color-button 45%, $color-player-position 45%);
+
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		cursor: ew-resize;
+		background: $color-light;
+
+		@include media-laptop {
+			width: 13px;
+			height: 13px;
+		}
+
+		@include media-mobile {
+			width: 10px;
+			height: 10px;
+		}
+	}
+
+	@include media-laptop {
+		height: 5px;
+	}
+
+	@include media-mobile {
+		height: 4px;
+	}
+}
+
+.player-button {
+	border: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	@extend %transition;
+
+	&:hover {
+		filter: invert(61%) sepia(0%) saturate(2%) hue-rotate(55deg) brightness(101%) contrast(86%);
+	}
+}
+
+.player__play {
+	width: 23px;
+	height: 31px;
+	background-image: url('../img/icons/player/play.svg');
+
+	@include media-laptop {
+		width: 23px;
+		height: 30px;
+	}
+
+	@include media-mobile {
+		width: 14px;
+		height: 18px;
+	}
+}
+
+.play-range {
+	width: 929px;
+
+	@include media-laptop {
+		width: 564px;
+	}
+
+	@include media-tablet {
+		position: absolute;
+		top: -4px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.play-volume {
+	width: 155px;
+
+	@include media-laptop {
+		width: 143px;
+	}
+
+	@include media-tablet {
+		width: 486px;
+	}
+
+	@include media-mobile {
+		width: 200px;
+	}
+}
+
+/*.player__video_position {
+	position: relative;
+	width: 929px;
+	height: 8px;
+	background-color: $color-player-position;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		background-color: $color-button;
+	}
+}
+
+.player__position-control {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: $color-light;
+	transform: translateY(-50%);
+}*/
+
+.player__volume {
+	width: 38px;
+	height: 31px;
+	background-image: url('../img/icons/player/volume.svg');
+
+	@include media-laptop {
+		width: 26px;
+		height: 20px;
+	}
+
+	@include media-mobile {
+		width: 18px;
+		height: 14px;
+	}
+}
+
+.player__screen_full {
+	width: 35px;
+	height: 35px;
+	background-image: url('../img/icons/player/fullscreen.svg');
+
+	@include media-laptop {
+		width: 26px;
+		height: 26px;
+	}
+
+	@include media-mobile {
+		width: 18px;
+		height: 18px;
+	}
+}
